@@ -2,10 +2,10 @@ import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/calls/calls_module.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/chat/chat_module.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/home/home_controller.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/status/status_module.dart';
+import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/calls/calls_module.dart';
+import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/chat/chat_module.dart';
+import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/home/home_controller.dart';
+import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/status/status_module.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -16,15 +16,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends ModularState<HomePage, HomeController> {
+  var lisPages = [
+    () => ChatModule(),
+    () => StatusModule(),
+    () => CallsModule()
+  ];
+
+ // var lisPages = [
+ //   () => ChatModule(),
+ //   () => StatusModule(),
+ //   () => CallsModule()
+ // ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        physics: NeverScrollableScrollPhysics(),
-        controller: controller.pageController,
-        children: [ChatModule(), StatusModule(), CallsModule()],
+      body: Observer(builder: (_) {
+        return lisPages[controller.selectedIndex]();
+         //return lisPages[controller.selectedIndex];
+      }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {}, child: Icon(Icons.add),),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       bottomNavigationBar: Observer(
         builder: (BuildContext context) {
