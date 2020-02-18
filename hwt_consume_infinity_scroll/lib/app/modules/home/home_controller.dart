@@ -20,6 +20,7 @@ abstract class _HomeBase with Store {
   ObservableList<PokemonModel> pokemons = ObservableList<PokemonModel>();
 
   @action
+  //Next é a quantidade de itemns que vou carregar
   Future<void> getMore({int next = 10}) async {
     isLoading = true;
 
