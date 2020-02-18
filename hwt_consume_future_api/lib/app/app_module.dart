@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:hwt_consume_future_api/app/app_widget.dart';
 import 'package:hwt_consume_future_api/app/modules/home/home_module.dart';
 
+import 'modules/detail/detail_module.dart';
+
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
@@ -13,6 +15,8 @@ class AppModule extends MainModule {
   @override
   List<Router> get routers => [
         Router('/', module: HomeModule()),
+        Router('/detail',
+            module: DetailModule(), transition: TransitionType.fadeIn),
       ];
 
   @override

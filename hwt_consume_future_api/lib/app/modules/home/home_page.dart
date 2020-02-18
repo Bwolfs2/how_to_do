@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:get/get.dart';
 import 'package:hwt_consume_future_api/app/modules/home/home_controller.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,6 +26,10 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
               itemCount: controller.pokemons.length,
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
+                  onTap: () {
+                    Get.toNamed("/detail",
+                        arguments: {"pkm": controller.pokemons[index]});
+                  },
                   title: Text(controller.pokemons[index].name),
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(
