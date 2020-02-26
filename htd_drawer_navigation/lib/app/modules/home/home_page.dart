@@ -12,8 +12,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.yellow,
+        onPressed: () {
+          Scaffold.of(context).openDrawer();
+        },
+        child: Icon(Icons.menu),
+      ),
       body: Column(
-        children: <Widget>[
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[        
           Container(
             height: MediaQuery.of(context).size.height / 5,
             child: ListView.builder(
