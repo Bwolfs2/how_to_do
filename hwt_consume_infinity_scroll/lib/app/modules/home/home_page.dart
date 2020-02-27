@@ -30,6 +30,15 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     });
   }
 
+  final button = new PopupMenuButton(
+      itemBuilder: (_) => <PopupMenuItem<String>>[
+            new PopupMenuItem<String>(child: const Text('Doge'), value: 'Doge'),
+            new PopupMenuItem<String>(child: const Text('Lion'), value: 'Lion'),
+          ],
+      onSelected: (_) {
+        print(_);
+      });
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +53,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
               itemCount: controller.pokemons.length,
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
+                  trailing: button,
                   title: Text(controller.pokemons[index].name),
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(
