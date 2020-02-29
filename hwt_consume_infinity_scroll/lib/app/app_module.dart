@@ -1,3 +1,4 @@
+import 'package:hwt_consume_infinity_scroll/app/modules/services/testes_service.dart';
 import 'package:hwt_consume_infinity_scroll/app/app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:hwt_consume_infinity_scroll/app/modules/home/home_module.dart';
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
+        Bind((i) => TestesService()),
         Bind((i) => AppController()),
       ];
 
