@@ -187,7 +187,7 @@ packages:
       name: flutter_modular
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.1"
+    version: "0.5.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter

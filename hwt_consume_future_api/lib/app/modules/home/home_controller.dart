@@ -22,7 +22,8 @@ abstract class _HomeBase with Store {
   Future<void> fillData() async {
     isLoading = true;
     List<PokemonModel> pkms = [];
-    for (var i = 1; i < 152; i++) {
+    //for (var i = 1; i < 152; i++) {
+    for (var i = 1; i < 10; i++) {
       pkms.add(await repository.getData(i));
     }
 
