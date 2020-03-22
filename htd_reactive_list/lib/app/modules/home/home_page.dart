@@ -15,8 +15,23 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          controller.addItem();
+        },
+        child: Icon(Icons.add),
+      ),
       appBar: AppBar(
         title: Text(widget.title),
+        actions: <Widget>[
+          Observer(
+            builder: (BuildContext context) {
+              return CircleAvatar(
+                child: Text(controller.produtos.length.toString()),
+              );
+            },
+          )
+        ],
       ),
       body: Observer(
         builder: (BuildContext context) {

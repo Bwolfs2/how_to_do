@@ -8,12 +8,18 @@ class HomeController = _HomeBase with _$HomeController;
 abstract class _HomeBase with Store {
   _HomeBase() {
     produtos = List.generate(
-            100, (index) => ProdutoStore(id: index, nome: "Produto $index"))
+            10, (index) => ProdutoStore(id: index, nome: "Produto $index"))
         .asObservable();
   }
 
   @observable
   ObservableList<ProdutoStore> produtos;
+
+  @action
+  void addItem() {
+    var indx = produtos.length;
+    produtos.add(ProdutoStore(id: indx + 1, nome: "Produto ${indx + 1}"));
+  }
 
   @action
   void changeName(int id) {
