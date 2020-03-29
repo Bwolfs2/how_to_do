@@ -30,7 +30,10 @@ class _DropDownCustomWidgetState extends State<DropDownCustomWidget> {
                 padding: const EdgeInsets.all(10),
                 child: SearchableDropdown.single(
                   items: snapshot.data
-                      .map((e) => DropdownMenuItem(child: Text(e)))
+                      .map((e) => DropdownMenuItem(
+                            child: Text(e),
+                            value: e,
+                          ))
                       .toList(),
                   hint: "No Idea",
                   onClear: () {
