@@ -33,11 +33,18 @@ class _DropDownCustomWidgetState extends State<DropDownCustomWidget> {
                       .map((e) => DropdownMenuItem(child: Text(e)))
                       .toList(),
                   hint: "No Idea",
+                  onClear: () {
+                    setState(() {
+                      childItem = null;
+                    });
+                  },
+                  value: "1",
                   onChanged: (value) {
                     setState(() {
                       childItem = DropDownCustomWidget(
                         data: () async {
-                          return List.generate(20, (index) => index.toString());
+                          return List.generate(
+                              20, (index) => "$value - $index");
                         },
                       );
                     });
