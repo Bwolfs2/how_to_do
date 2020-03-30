@@ -6,11 +6,13 @@ import 'package:how_to_do_bottom_navigation_bar/app/modules/home/home_module.dar
 
 import 'modules/login/login_module.dart';
 import 'modules/splash/splash_module.dart';
+import 'shared/auth_store.dart';
 
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
         Bind((i) => AppController()),
+        Bind((i) => AuthStore()),
       ];
 
   @override

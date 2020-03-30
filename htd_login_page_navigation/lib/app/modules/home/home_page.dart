@@ -24,7 +24,29 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
         controller: controller.pageController,
         children: [ChatModule(), StatusModule(), CallsModule()],
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {}, child: Icon(Icons.add),),
+      floatingActionButton: Container(
+        child: Observer(
+          builder: (BuildContext context) {
+            if (controller.isLogged) {
+              return FloatingActionButton(
+                backgroundColor: Colors.green,
+                onPressed: () {
+                  controller.login();
+                },
+                child: Icon(Icons.person_add),
+              );
+            }
+
+            return FloatingActionButton(
+              backgroundColor: Colors.red,
+              onPressed: () {
+                controller.logoff();
+              },
+              child: Icon(Icons.person_add),
+            );
+          },
+        ),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       bottomNavigationBar: Observer(
         builder: (BuildContext context) {

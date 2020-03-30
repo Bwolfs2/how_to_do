@@ -194,7 +194,7 @@ packages:
       name: flutter_modular
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.7+4"
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -470,7 +470,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.11"
+    version: "0.2.15"
   timing:
     dependency: transitive
     description:

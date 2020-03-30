@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:searchable_dropdown/searchable_dropdown.dart';
 
 class DropDownCustomWidget extends StatefulWidget {
@@ -45,6 +46,7 @@ class _DropDownCustomWidgetState extends State<DropDownCustomWidget> {
                   onChanged: (value) {
                     setState(() {
                       childItem = DropDownCustomWidget(
+                        key: UniqueKey(),
                         data: () async {
                           return List.generate(
                               20, (index) => "$value - $index");
