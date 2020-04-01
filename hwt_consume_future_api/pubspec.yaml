@@ -16,12 +16,14 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
-dependencies:  
-  get: ^1.10.1
+dependencies:    
+  fl_animated_linechart: ^1.1.2
+  fcharts: ^0.0.11
+  flutter_chart: ^0.1.5 
   dio: ^3.0.8
   flutter_mobx: ^1.0.1
   mobx: ^1.0.2
-  flutter_modular: ^0.5.3
+  flutter_modular: ^1.0.0
   flutter:
     sdk: flutter 
 

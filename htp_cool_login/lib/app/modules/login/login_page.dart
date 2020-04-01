@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'login_controller.dart';
 
 class LoginPage extends StatefulWidget {
@@ -60,7 +61,12 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
                       child: RaisedButton(
                         padding: EdgeInsets.all(15),
                         color: Colors.orange,
-                        onPressed: () {},
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                            msg: "Nice Job",
+                            toastLength: Toast.LENGTH_LONG,
+                          );
+                        },
                         child: Text(
                           "Login",
                           style: TextStyle(
