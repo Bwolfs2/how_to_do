@@ -62,10 +62,10 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
                         padding: EdgeInsets.all(15),
                         color: Colors.orange,
                         onPressed: () {
-                          Fluttertoast.showToast(
-                            msg: "Nice Job",
-                            toastLength: Toast.LENGTH_LONG,
-                          );
+                          // Fluttertoast.showToast(
+                          //   msg: "Nice Job",
+                          //   toastLength: Toast.LENGTH_LONG,
+                          // );
                         },
                         child: Text(
                           "Login",

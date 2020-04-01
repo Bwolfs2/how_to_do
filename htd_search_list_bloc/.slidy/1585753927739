@@ -1,0 +1,5 @@
+lib/app/module/search/search_module.dart
+lib/app/module/search/search_page.dart
+test/app/module/search/search_page_test.dart
+lib/app/module/search/search_controller.dart
+test/app/module/search/search_controller_test.dart
