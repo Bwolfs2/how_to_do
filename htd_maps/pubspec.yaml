@@ -16,7 +16,8 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.6.0 <3.0.0"
 
-dependencies:
+dependencies:  
+  flutter_cache_manager: ^1.1.3
   google_maps_flutter: ^0.5.24+1
   dio: ^3.0.9
   flutter_mobx: ^1.0.1
