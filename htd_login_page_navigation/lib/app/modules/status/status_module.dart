@@ -1,7 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/status/status_controller.dart';
+import 'package:htd_login_page_navigation/app/modules/status/status_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/status/status_page.dart';
+import 'package:htd_login_page_navigation/app/modules/status/status_page.dart';
 
 class StatusModule extends ModuleWidget {
   @override

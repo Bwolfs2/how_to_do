@@ -21,7 +21,7 @@ dependencies:
   dio: ^3.0.8
   flutter_mobx: ^1.0.1
   mobx: ^1.0.1
-  flutter_modular: ^0.4.7+4
+  flutter_modular: ^1.0.0
   flutter:
     sdk: flutter
 

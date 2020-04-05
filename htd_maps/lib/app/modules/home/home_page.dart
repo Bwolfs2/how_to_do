@@ -23,11 +23,8 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     zoom: 14.4746,
   );
 
-  static final CameraPosition _kLake = CameraPosition(
-      bearing: 192.8334901395799,
-      target: LatLng(-29.9739656, -51.1950164),
-      tilt: 59.440717697143555,
-      zoom: 19.151926040649414);
+  static final CameraPosition _kLake =
+      CameraPosition(target: LatLng(-29.9739656, -51.1950164), zoom: 14);
 
   Future<void> _goToTheLake() async {
     final GoogleMapController controller = await _controller.future;
@@ -40,13 +37,33 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: GoogleMap(
-        mapType: MapType.hybrid,
-        initialCameraPosition: _kGooglePlex,
-        onMapCreated: (GoogleMapController controller) {
-          _controller.complete(controller);
-        },
-      ),
+      body: FutureBuilder<BitmapDescriptor>(
+          future: BitmapDescriptor.fromAssetImage(
+              ImageConfiguration(devicePixelRatio: 1, size: Size(10, 10)),
+              'assets/marker.png'),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData) {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+
+            return GoogleMap(
+              markers: {
+                Marker(
+                  markerId: MarkerId(""),
+                  icon: snapshot.data,
+                  position: LatLng(-29.9739656, -51.1950164),
+                )
+              },
+              mapType: MapType.hybrid,
+              initialCameraPosition: _kGooglePlex,
+              onMapCreated: (GoogleMapController controller) {
+                _controller.complete(controller);
+              },
+            );
+          }),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _goToTheLake,
         label: Text('Arena do Grêmio'),

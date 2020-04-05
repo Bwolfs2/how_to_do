@@ -1,4 +1,4 @@
-package com.example.how_to_do_bottom_navigation_bar
+package br.htd_login_page_navigation
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

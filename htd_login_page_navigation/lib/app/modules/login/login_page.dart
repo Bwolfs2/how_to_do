@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/login/login_controller.dart';
+import 'package:htd_login_page_navigation/app/modules/login/login_controller.dart';
 
 class LoginPage extends StatefulWidget {
   final String title;

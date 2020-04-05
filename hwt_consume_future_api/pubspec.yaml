@@ -17,8 +17,6 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:    
-  syncfusion_flutter_charts: ^18.1.42
-  flutter_chart: ^0.1.5 
   dio: ^3.0.8
   flutter_mobx: ^1.0.1
   mobx: ^1.0.2

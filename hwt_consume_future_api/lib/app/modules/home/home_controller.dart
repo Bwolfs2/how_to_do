@@ -23,7 +23,7 @@ abstract class _HomeBase with Store {
     isLoading = true;
     List<PokemonModel> pkms = [];
     //for (var i = 1; i < 152; i++) {
-    for (var i = 1; i < 10; i++) {
+    for (var i = 1; i < 20; i++) {
       pkms.add(await repository.getData(i));
     }
 

@@ -2,10 +2,10 @@ import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/calls/calls_module.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/chat/chat_module.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/home/home_controller.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/status/status_module.dart';
+import 'package:htd_login_page_navigation/app/modules/calls/calls_module.dart';
+import 'package:htd_login_page_navigation/app/modules/chat/chat_module.dart';
+import 'package:htd_login_page_navigation/app/modules/home/home_controller.dart';
+import 'package:htd_login_page_navigation/app/modules/status/status_module.dart';
 
 class HomePage extends StatefulWidget {
   final String title;

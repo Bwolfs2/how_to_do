@@ -2,8 +2,8 @@ import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'package:how_to_do_bottom_navigation_bar/app/modules/login/login_controller.dart';
-import 'package:how_to_do_bottom_navigation_bar/app/modules/login/login_module.dart';
+import 'package:htd_login_page_navigation/app/modules/login/login_controller.dart';
+import 'package:htd_login_page_navigation/app/modules/login/login_module.dart';
 
 void main() {
   initModule(LoginModule());
@@ -18,10 +18,10 @@ void main() {
       expect(login, isInstanceOf<LoginController>());
     });
 
-  //  test("Set Value", () {
-  //    expect(login.value, equals(0));
-  //    login.increment();
-  //    expect(login.value, equals(1));
-  //  });
+    //  test("Set Value", () {
+    //    expect(login.value, equals(0));
+    //    login.increment();
+    //    expect(login.value, equals(1));
+    //  });
   });
 }

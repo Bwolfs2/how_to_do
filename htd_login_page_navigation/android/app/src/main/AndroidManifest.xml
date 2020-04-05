@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.how_to_do_bottom_navigation_bar">
+    package="br.htd_login_page_navigation">
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
          In most cases you can leave this as-is, but you if you want to provide
@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="how_to_do_bottom_navigation_bar"
+        android:label="htd_login_page_navigation"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

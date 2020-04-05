@@ -1,4 +1,4 @@
-import 'package:how_to_do_bottom_navigation_bar/app/shared/auth_store.dart';
+import 'package:htd_login_page_navigation/app/shared/auth_store.dart';
 import 'package:mobx/mobx.dart';
 
 part 'splash_controller.g.dart';
@@ -19,6 +19,6 @@ abstract class _SplashBase with Store {
   }
 
   bool verificaLogin() {
-    return 1 == 1;
+    return 1 != 1;
   }
 }
