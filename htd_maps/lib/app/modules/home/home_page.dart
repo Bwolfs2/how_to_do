@@ -37,7 +37,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     controller.animateCamera(CameraUpdate.newCameraPosition(_kLake));
   }
 
-  Future<BitmapDescriptor> getBytesFromAsset(String path) async {
+  Future<BitmapDescriptor> getfromUrl(String path) async {
     final int targetWidth = 100;
     final File markerImageFile =
         await DefaultCacheManager().getSingleFile(path);
@@ -62,7 +62,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
         title: Text(widget.title),
       ),
       body: FutureBuilder<BitmapDescriptor>(
-          future: getBytesFromAsset(
+          future: getfromUrl(
               'https://www.irmasclarissas.org.br/wp-content/uploads/2015/08/Map-Marker-PNG-File.png'),
 
           //Caso voce queira consumir um Png local
