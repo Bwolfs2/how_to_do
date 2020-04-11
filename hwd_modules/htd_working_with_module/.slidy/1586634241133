@@ -1,0 +1,5 @@
+lib/app/modules/auth/auth_module.dart
+lib/app/modules/auth/auth_page.dart
+test/app/modules/auth/auth_page_test.dart
+lib/app/modules/auth/auth_controller.dart
+test/app/modules/auth/auth_controller_test.dart
