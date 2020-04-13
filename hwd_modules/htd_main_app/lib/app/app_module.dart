@@ -1,9 +1,9 @@
-import 'package:htd_main_app/app/app_controller.dart';
-import 'package:flutter_modular/flutter_modular.dart';
+import 'package:auth_module/app/modules/auth/auth_module.dart';
+import 'package:product_module/app/modules/product/product_module.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:htd_main_app/app/app_controller.dart';
 import 'package:htd_main_app/app/app_widget.dart';
-import 'package:htd_main_app/app/modules/home/home_module.dart';
-import 'package:htdworkingwithmodule/app/modules/auth/auth_module.dart';
 
 class AppModule extends MainModule {
   @override
@@ -13,7 +13,10 @@ class AppModule extends MainModule {
 
   @override
   List<Router> get routers => [
-        Router(Modular.initialRoute, module: AuthModule()),
+        //normaly here we have a rootPage but in this case i use just the same product_module
+        Router(Modular.initialRoute, module: ProductModule()),
+        Router("/product", module: ProductModule()),
+        Router("/login", module: AuthModule()),
       ];
 
   @override

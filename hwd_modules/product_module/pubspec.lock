@@ -36,13 +36,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.4.1"
-  auth_module:
-    dependency: "direct main"
-    description:
-      path: "../auth_module"
-      relative: true
-    source: path
-    version: "1.0.0+1"
   boolean_selector:
     dependency: transitive
     description:
@@ -200,20 +193,8 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
-  fluttertoast:
-    dependency: transitive
-    description:
-      name: fluttertoast
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.1"
   font_awesome_flutter:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: font_awesome_flutter
       url: "https://pub.dartlang.org"
@@ -380,13 +361,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.0"
-  product_module:
-    dependency: "direct main"
-    description:
-      path: "../product_module"
-      relative: true
-    source: path
-    version: "1.0.0+1"
   pub_semver:
     dependency: transitive
     description:
@@ -534,4 +508,3 @@ packages:
     version: "2.2.0"
 sdks:
   dart: ">=2.7.0 <3.0.0"
-  flutter: ">=1.12.8 <2.0.0"
