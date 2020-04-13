@@ -28,6 +28,7 @@ class RedCardWidget extends StatelessWidget {
                 onChanged: controller.user.setNome,
                 decoration: InputDecoration(
                   labelText: "Nome",
+                  errorText: controller.user.nomeErro,
                 ),
               );
             },
@@ -38,6 +39,7 @@ class RedCardWidget extends StatelessWidget {
                 onChanged: controller.user.setSobrenome,
                 decoration: InputDecoration(
                   labelText: "Sobrenome",
+                  errorText: controller.user.sobrenomeErro,
                 ),
               );
             },
