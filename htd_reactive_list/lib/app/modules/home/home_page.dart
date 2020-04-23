@@ -33,33 +33,77 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           )
         ],
       ),
-      body: Observer(
-        builder: (BuildContext context) {
-          var list = controller.produtos;
-          return ListView.separated(
-            itemCount: list.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Observer(
-                builder: (BuildContext context) {
-                  return ListTile(
-                    leading: CircleAvatar(child: Text("${list[index].id}")),
-                    title: Text("${list[index].nome}"),
-                    trailing: Icon(
-                      Icons.arrow_forward_ios,
-                      size: 14,
-                    ),
-                    onTap: () {
-                      controller.changeName(list[index].id);
-                    },
-                  );
-                },
-              );
-            },
-            separatorBuilder: (BuildContext context, int index) {
-              return Divider();
-            },
-          );
-        },
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Observer(
+              builder: (BuildContext context) {
+                var list = controller.categoria.listaProdutos;
+                return ListView.separated(
+                  shrinkWrap: true,
+                  itemCount: list.length,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    return Observer(
+                      builder: (BuildContext context) {
+                        return ListTile(
+                          leading:
+                              CircleAvatar(child: Text("${list[index].id}")),
+                          title: Text("${list[index].nome}"),
+                          trailing: Icon(
+                            Icons.arrow_forward_ios,
+                            size: 14,
+                          ),
+                          onTap: () {
+                            controller.changeName(list[index].id);
+                          },
+                        );
+                      },
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return Divider();
+                  },
+                );
+              },
+            ),
+            Divider(
+              thickness: 10,
+              color: Colors.red,
+            ),
+            Observer(
+              builder: (BuildContext context) {
+                var list = controller.produtos;
+                return ListView.separated(
+                  shrinkWrap: true,
+                  itemCount: list.length,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemBuilder: (BuildContext context, int index) {
+                    return Observer(
+                      builder: (BuildContext context) {
+                        return ListTile(
+                          leading:
+                              CircleAvatar(child: Text("${list[index].id}")),
+                          title: Text("${list[index].nome}"),
+                          trailing: Icon(
+                            Icons.arrow_forward_ios,
+                            size: 14,
+                          ),
+                          onTap: () {
+                            controller.changeName(list[index].id);
+                          },
+                        );
+                      },
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return Divider();
+                  },
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
