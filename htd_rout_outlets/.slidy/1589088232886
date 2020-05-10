@@ -1,0 +1,5 @@
+lib/app/modules/root/status/status_module.dart
+lib/app/modules/root/status/status_page.dart
+test/app/modules/root/status/status_page_test.dart
+lib/app/modules/root/status/status_controller.dart
+test/app/modules/root/status/status_controller_test.dart

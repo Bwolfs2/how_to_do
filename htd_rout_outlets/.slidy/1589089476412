@@ -1,0 +1,5 @@
+lib/app/modules/root/group/chat_group/chat_group_module.dart
+lib/app/modules/root/group/chat_group/chat_group_page.dart
+test/app/modules/root/group/chat_group/chat_group_page_test.dart
+lib/app/modules/root/group/chat_group/chat_group_controller.dart
+test/app/modules/root/group/chat_group/chat_group_controller_test.dart
