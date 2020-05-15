@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -24,7 +25,11 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           IconButton(
             icon: Icon(Icons.refresh),
             onPressed: () async {
-              await controller.changeParameter("1", "2", 1);
+              var response = await Dio().get(
+                  "http://ec2-52-87-126-237.compute-1.amazonaws.com/api/Parceiro/ListarPorCategoriaIdOnline/5/16");
+              // await controller.changeParameter("1", "2", 1);
+
+              print(response);
             },
           )
         ],

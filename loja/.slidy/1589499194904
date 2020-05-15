@@ -1,0 +1,5 @@
+lib/app/modules/compra/compra_module.dart
+lib/app/modules/compra/compra_page.dart
+test/app/modules/compra/compra_page_test.dart
+lib/app/modules/compra/compra_controller.dart
+test/app/modules/compra/compra_controller_test.dart

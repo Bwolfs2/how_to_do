@@ -1,0 +1,5 @@
+lib/app/modules/produto/produto_module.dart
+lib/app/modules/produto/produto_page.dart
+test/app/modules/produto/produto_page_test.dart
+lib/app/modules/produto/produto_controller.dart
+test/app/modules/produto/produto_controller_test.dart

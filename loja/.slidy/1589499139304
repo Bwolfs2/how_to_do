@@ -1,0 +1,5 @@
+lib/app/modules/loja/loja_module.dart
+lib/app/modules/loja/loja_page.dart
+test/app/modules/loja/loja_page_test.dart
+lib/app/modules/loja/loja_controller.dart
+test/app/modules/loja/loja_controller_test.dart
