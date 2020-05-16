@@ -1,0 +1,5 @@
+lib/app/modules/controle_financeiro/controle_financeiro_module.dart
+lib/app/modules/controle_financeiro/controle_financeiro_page.dart
+test/app/modules/controle_financeiro/controle_financeiro_page_test.dart
+lib/app/modules/controle_financeiro/controle_financeiro_controller.dart
+test/app/modules/controle_financeiro/controle_financeiro_controller_test.dart

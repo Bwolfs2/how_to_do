@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vendas_faturamento.iml" filepath="$PROJECT_DIR$/vendas_faturamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/vendas_faturamento_android.iml" filepath="$PROJECT_DIR$/android/vendas_faturamento_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/vendas_faturamento_example_android.iml" filepath="$PROJECT_DIR$/example/android/vendas_faturamento_example_android.iml" />
+    </modules>
+  </component>
+</project>

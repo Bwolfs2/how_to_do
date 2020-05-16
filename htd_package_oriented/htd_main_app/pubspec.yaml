@@ -21,16 +21,36 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  auth_module:
-    path: ../auth_module
-  
-  product_module:
-    path: ../product_module
-  
   dio: ^3.0.9
   flutter_mobx: ^1.1.0
-  mobx: ^1.1.1
-  flutter_modular: ^1.1.1
+  mobx: ^1.2.0
+  flutter_modular: ^1.2.1
+
+  compra_estoque_online:
+    path: ../modules/compra_estoque_online
+
+
+  controle_financeiro:
+    path: ../modules/controle_financeiro
+
+  controle_patrimonial:
+    path: ../modules/controle_patrimonial
+
+  crm:
+    path: ../modules/crm
+
+  gestao_compras:
+    path: ../modules/gestao_compras    
+
+  gestao_projetos:
+    path: ../modules/gestao_projetos    
+
+  login:
+    path: ../modules/login       
+
+  vendas_faturamento:
+    path: ../modules/vendas_faturamento           
+
   flutter:
     sdk: flutter
 
@@ -40,8 +60,8 @@ dependencies:
 
 dev_dependencies:
   mockito: ^4.1.1
-  mobx_codegen: ^1.0.3
-  build_runner: ^1.8.1
+  mobx_codegen: ^1.1.0
+  build_runner: ^1.10.0
   flutter_test:
     sdk: flutter
 

@@ -1,0 +1,5 @@
+lib/app/modules/gestao_compras/gestao_compras_module.dart
+lib/app/modules/gestao_compras/gestao_compras_page.dart
+test/app/modules/gestao_compras/gestao_compras_page_test.dart
+lib/app/modules/gestao_compras/gestao_compras_controller.dart
+test/app/modules/gestao_compras/gestao_compras_controller_test.dart

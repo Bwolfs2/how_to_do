@@ -1,0 +1,16 @@
+{
+	"folders": [
+        {
+            "path": "htd_main_app"
+        },
+        {
+            "path": "modules"
+        }        
+    ],
+    "settings": {
+        "dart.debugExternalLibraries": true,
+        "files.exclude": {
+            "**/.g.dart": true
+        }
+	}
+}
