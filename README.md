@@ -1,3 +1,3 @@
 # how_to_do
 
-Many samples for every solutions
+Many samples for all solutions
