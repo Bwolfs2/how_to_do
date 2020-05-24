@@ -3,7 +3,7 @@ import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/status/
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/status/status_page.dart';
 
-class StatusModule extends ModuleWidget {
+class StatusModule extends WidgetModule {
   @override
   List<Bind> get binds => [
         Bind((i) => StatusController()),

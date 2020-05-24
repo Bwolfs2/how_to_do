@@ -22,18 +22,27 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     () => CallsModule()
   ];
 
- // var lisPages = [
- //   () => ChatModule(),
- //   () => StatusModule(),
- //   () => CallsModule()
- // ];
+  // var lisPages = [
+  //   () => ChatModule(),
+  //   () => StatusModule(),
+  //   () => CallsModule()
+  // ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.refresh),
+              onPressed: () {
+                controller.changePage(controller.selectedIndex);
+              })
+        ],
+      ),
       body: Observer(builder: (_) {
         return lisPages[controller.selectedIndex]();
-         //return lisPages[controller.selectedIndex];
+        //return lisPages[controller.selectedIndex];
       }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

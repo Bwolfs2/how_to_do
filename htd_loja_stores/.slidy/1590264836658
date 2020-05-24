@@ -1,0 +1,5 @@
+lib/app/modules/exemplo/exemplo_module.dart
+lib/app/modules/exemplo/exemplo_page.dart
+test/app/modules/exemplo/exemplo_page_test.dart
+lib/app/modules/exemplo/exemplo_controller.dart
+test/app/modules/exemplo/exemplo_controller_test.dart

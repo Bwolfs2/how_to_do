@@ -1,0 +1,2 @@
+lib/app/modules/loja/repositories/loja_repository.dart
+test/app/modules/loja/repositories/loja_repository_test.dart

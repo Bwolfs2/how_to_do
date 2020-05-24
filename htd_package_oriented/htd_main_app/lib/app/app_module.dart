@@ -9,7 +9,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 import 'package:htd_main_app/app/app_widget.dart';
 import 'package:htd_main_app/app/modules/home/home_module.dart';
-import 'package:login/app/modules/login/login_module.dart';
+import 'package:login_module/app/modules/login/login_module.dart';
+
 import 'package:vendas_faturamento/app/modules/vendas_faturamentos/vendas_faturamentos_module.dart';
 
 class AppModule extends MainModule {

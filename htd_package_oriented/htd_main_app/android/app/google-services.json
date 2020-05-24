@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "835567707126",
+    "firebase_url": "https://htd-firebase.firebaseio.com",
+    "project_id": "htd-firebase",
+    "storage_bucket": "htd-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835567707126:android:3b0e6197d9acaa4b185dd7",
+        "android_client_info": {
+          "package_name": "br.flutterando.htd_main_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835567707126-tudpso2s7tslpfa6ern9bem54uf72mng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoBynrr-dJtyhs_HCNjmFeZuSU61UkAKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835567707126-tudpso2s7tslpfa6ern9bem54uf72mng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835567707126:android:c91f96076c813839185dd7",
+        "android_client_info": {
+          "package_name": "br.htd_firebase_crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835567707126-tudpso2s7tslpfa6ern9bem54uf72mng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoBynrr-dJtyhs_HCNjmFeZuSU61UkAKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835567707126-tudpso2s7tslpfa6ern9bem54uf72mng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

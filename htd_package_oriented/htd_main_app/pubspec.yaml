@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+#  firebase_auth: ^0.16.0
   dio: ^3.0.9
   flutter_mobx: ^1.1.0
   mobx: ^1.2.0
@@ -28,7 +29,6 @@ dependencies:
 
   compra_estoque_online:
     path: ../modules/compra_estoque_online
-
 
   controle_financeiro:
     path: ../modules/controle_financeiro
@@ -43,10 +43,11 @@ dependencies:
     path: ../modules/gestao_compras    
 
   gestao_projetos:
-    path: ../modules/gestao_projetos    
+    path: ../modules/gestao_projetos      
 
-  login:
-    path: ../modules/login       
+  login_module:
+    git:
+      url: https://github.com/Bwolfs2/login_module.git 
 
   vendas_faturamento:
     path: ../modules/vendas_faturamento           

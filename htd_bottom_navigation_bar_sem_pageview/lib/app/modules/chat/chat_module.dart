@@ -3,7 +3,7 @@ import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/chat/ch
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:how_to_do_bottom_navigation_bar_sem_pageview/app/modules/chat/chat_page.dart';
 
-class ChatModule extends ModuleWidget {
+class ChatModule extends WidgetModule {
   @override
   List<Bind> get binds => [
         Bind((i) => ChatController()),

@@ -10,7 +10,7 @@ class HomeController = _HomeBase with _$HomeController;
 abstract class _HomeBase with Store {
   _HomeBase() {
     produtos = List.generate(
-            10, (index) => ProdutoStore(id: index, nome: "Produto $index"))
+            20, (index) => ProdutoStore(id: index, nome: "Produto $index"))
         .asObservable();
   }
 
