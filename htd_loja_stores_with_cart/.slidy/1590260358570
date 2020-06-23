@@ -1,0 +1,4 @@
+lib/app/modules/pagamento/pages/dados_pagamento/dados_pagamento_page.dart
+test/app/modules/pagamento/pages/dados_pagamento/dados_pagamento_page_test.dart
+lib/app/modules/pagamento/pages/dados_pagamento/dados_pagamento_controller.dart
+test/app/modules/pagamento/pages/dados_pagamento/dados_pagamento_controller_test.dart

@@ -1,0 +1,4 @@
+lib/app/modules/compra/pages/carrinho/widgets/carrinho_total/carrinho_total_widget.dart
+test/app/modules/compra/pages/carrinho/widgets/carrinho_total/carrinho_total_widget_test.dart
+lib/app/modules/compra/pages/carrinho/widgets/carrinho_total/carrinho_total_controller.dart
+test/app/modules/compra/pages/carrinho/widgets/carrinho_total/carrinho_total_controller_test.dart
