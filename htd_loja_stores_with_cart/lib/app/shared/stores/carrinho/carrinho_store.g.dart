@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'carrinho_lista_produtos_controller.dart';
+part of 'carrinho_store.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,8 +8,7 @@ part of 'carrinho_lista_produtos_controller.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$CarrinhoListaProdutosController
-    on _CarrinhoListaProdutosControllerBase, Store {
+mixin _$CarrinhoStore on _CarrinhoStoreBase, Store {
   @override
   String toString() {
     return '''
