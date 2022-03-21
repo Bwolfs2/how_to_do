@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:htd_set_state/src/pages/value_notifier_pages/home_page_complex_value_notifier.dart';
+import 'package:htd_set_state/src/pages/state_notifier/home_page_state_notifier.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePageComplexValueNotifier                (),
+      home: const HomePageStateNotifier(),
     );
   }
 }

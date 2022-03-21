@@ -17,16 +17,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            StatefulBuilder(builder: (context, setState) {
-              return ElevatedButton(
+            StatefulBuilder(
+              builder: (context, newSetState) => ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.accents[Random().nextInt(Colors.accents.length)],
                   ),
                   onPressed: () {
                     setState(() {});
                   },
-                  child: const Text('Change Color'));
-            }),
+                  child: const Text('Change Color')),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: List.generate(
@@ -111,13 +111,13 @@ class LoadingTimed extends StatefulWidget {
 
 class _LoadingTimedState extends State<LoadingTimed> {
   //FALAR SOBRE O ERRO DE DIRT
-
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
-    //WidgetsBinding.instance?.addPostFrameCallback();
+    WidgetsBinding.instance?.addPostFrameCallback(
+      (timeStamp) {},
+    );
   }
 
   @override
